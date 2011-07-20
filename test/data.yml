@@ -317,12 +317,12 @@ Answer(ginkoElliptique):
 Answer(ginkoLanceolee):
     label:          Lancéolée
     question:       ginkoQuestion
-    isCorrect:      true
-    
-Answer(ginkoLobee):
-    label:          Lobée
-    question:       ginkoQuestion
     isCorrect:      false
+    
+Answer(ginkoBilobee):
+    label:          Bilobée
+    question:       ginkoQuestion
+    isCorrect:      true
     
 Answer(ginkoComposee):
     label:          Composée
@@ -332,12 +332,12 @@ Answer(ginkoComposee):
 Answer(peuplierElliptique):
     label:          Elliptique
     question:       peuplierQuestion
-    isCorrect:      false
+    isCorrect:      true
                     
 Answer(peuplierLanceolee):
     label:          Lancéolée
     question:       peuplierQuestion
-    isCorrect:      true
+    isCorrect:      false
     
 Answer(peuplierLobee):
     label:          Lobée
