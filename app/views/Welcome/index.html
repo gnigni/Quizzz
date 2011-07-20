@@ -1,0 +1,19 @@
+#{extends 'main.html' /} #{set title:'Home' /} #{if questionnaires}
+
+<div class="quiz">
+	<h2 class="quiz-title">
+		<a>${quizTitle}</a>
+	</h2>
+	<div class="questionnaires">
+		<ul>
+			#{list items:questionnaires, as:'questionnaire'}
+			<li><a href="@{Welcome.generate(questionnaire.id)}">${questionnaire.title}</a>
+			</li> #{/list}
+		</ul>
+	</div>
+</div>
+#{/if} #{else}
+<div class="retour">
+	<a>Il n'y a pas de questionnaire pour le moment.</a>
+</div>
+#{/else}

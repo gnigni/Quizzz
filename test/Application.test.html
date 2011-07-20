@@ -1,0 +1,156 @@
+#{fixture delete:'all', load:'data.yml' /}
+
+#{selenium 'Index page'}
+	clearSession()
+    // Open the home page, and check that no error occured
+    open('/')
+    assertNotTitle('Application error')
+	
+	// Check that the front post is present
+    assertTextPresent('Questionnaire sur la botanique')
+#{/selenium}
+
+#{selenium 'Browse botanic questionnaire'}
+ 
+    // Click on 'Questionnaire sur la botanique'
+    clickAndWait('link=Questionnaire sur la botanique')
+    assertTextPresent('1-')
+    assertTextPresent('Elliptique')
+    
+    // Post the answer
+    click('css=input[type=radio]')
+    clickAndWait('css=input[type=submit]')
+    assertTextPresent('2-')
+    
+     // Post the answer
+    click('css=input[type=radio]')
+    clickAndWait('css=input[type=submit]')
+    assertTextPresent('3-')
+    
+     // Post the answer
+    click('css=input[type=radio]')
+    clickAndWait('css=input[type=submit]')
+    assertTextPresent('4-')
+    
+     // Post the answer
+    click('css=input[type=radio]')
+    clickAndWait('css=input[type=submit]')
+    assertTextPresent('5-')
+    
+     // Post the answer
+    click('css=input[type=radio]')
+    clickAndWait('css=input[type=submit]')
+    assertTextPresent('6-')
+    
+     // Post the answer
+    click('css=input[type=radio]')
+    clickAndWait('css=input[type=submit]')
+    assertTextPresent('7-')
+    
+     // Post the answer
+    click('css=input[type=radio]')
+    clickAndWait('css=input[type=submit]')
+    assertTextPresent('8-')
+    
+     // Post the answer
+    click('css=input[type=radio]')
+    clickAndWait('css=input[type=submit]')
+    assertTextPresent('9-')
+    
+     // Post the answer
+    clickAndWait('css=input[type=submit]')
+    assertTextPresent('10-')
+    
+     // Post the answer
+    click('css=input[type=radio]')
+    clickAndWait('css=input[type=submit]')
+    assertTextPresent('Votre score')
+    
+    // Return to the index page
+    clickAndWait('link=Retour aux questionnaires')
+	assertTextPresent('Questionnaire sur les vaches')
+
+#{/selenium}
+
+#{selenium 'Browse cow questionnaire'}
+ 
+    // Click on 'Questionnaire sur les vaches'
+    clickAndWait('link=Questionnaire sur les vaches')
+    assertTextPresent('Il n'y a pas de question à afficher')
+    
+    // Return to the index page
+    clickAndWait('link=Retour aux questionnaires')
+	assertTextPresent('Questionnaire sur les vaches')
+
+#{/selenium}
+
+#{selenium 'Browse normande questionnaire'}
+ 
+    // Click on 'Questionnaire sur la Normande'
+    clickAndWait('link=Questionnaire sur la Normande')
+    assertTextPresent('1-')
+    
+    // Post the answer
+    click('css=input[type=radio]')
+    clickAndWait('css=input[type=submit]')
+    
+    assertTextPresent('Votre score')
+    
+    // Return to the index page
+    clickAndWait('link=Retour aux questionnaires')
+	assertTextPresent('Questionnaire sur les vaches')
+
+#{/selenium}
+
+
+#{selenium '/results/1'}
+    // Open a page of results, and check that no error occured
+    open('/results/1')
+	
+	// Check that the index page is opened
+	assertTitle('Home')
+    assertTextPresent('Choisissez un questionnaire')
+    
+#{/selenium}
+
+#{selenium '/show/'}
+    // Open the page, and check that no error occured
+    open('/show/')
+	
+	// Check that the index page is opened
+	assertTitle('Home')
+    assertTextPresent('Choisissez un questionnaire')
+#{/selenium}
+
+#{selenium '/show/456546546'}
+    // Open the page, and check that no error occured
+    open('/show/456546546')
+    
+   	assertNotTitle('Not found')
+    assertNotTitle('Application error')
+	
+	// Check that the good message appears
+    assertTextPresent('Il n'y a pas de question à afficher')
+    
+    // Return to the index page
+    clickAndWait('link=Retour aux questionnaires')
+	assertTextPresent('Questionnaire sur les vaches')
+#{/selenium}
+
+#{selenium '/results/'}
+    // Open the page, and check that no error occured
+    open('/results/')
+    
+    // Check that the index page is opened
+	assertTitle('Home')
+    assertTextPresent('Choisissez un questionnaire')
+#{/selenium}
+
+#{selenium '/results/5456786765'}
+    // Open the page, and check that no error occured
+    open('/results/5456786765')
+    
+    // Check that the index page is opened
+	assertTitle('Home')
+    assertTextPresent('Choisissez un questionnaire')
+#{/selenium}

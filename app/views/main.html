@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>#{get 'title' /}</title>
+        <meta charset="${_response_encoding}">
+        <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+    </head>
+    <body>
+		<div id="header">
+            <div id="logo">
+                <a href="@{Welcome.index}">Quizzz...</a>
+            </div>
+            <ul id="tools">
+                <li>
+                    <a href="@{CRUD.index()}">Log in</a>
+                </li>
+            </ul>
+            <div id="title">
+                <span class="about">About this blog</span>
+                <h1><a>${quizHeader}</a></h1>
+                <h2>${quizBaseline}</h2>
+            </div>
+        </div>
+        
+        <div id="main">
+            #{doLayout /} 
+        </div>
+        
+        <p id="footer">
+            Quizzz... is a (very) powerful quiz built with the 
+            <a href="http://www.playframework.org">play framework</a>
+            .
+        </p>
+    </body>
+</html>

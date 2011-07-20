@@ -1,0 +1,202 @@
+/** Main layout **/
+html,body {
+	background: #364B66 !important;
+	font-family: Helvetica, Arial, Sans !important;
+}
+
+body {
+	width: 900px;
+	padding: 0 30px;
+	margin: auto;
+}
+
+/** Blog header **/
+#header {
+	padding: 10px 0;
+	position: relative;
+}
+
+#logo {
+	display: block;
+	height: 57px;
+	margin-left: 20px;
+	color: #fff;
+	font-size: 56px;
+	font-weight: bold;
+	letter-spacing: -4px;
+	text-shadow: 1px 2px 2px #000;
+}
+
+#logo a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#logo span {
+	color: #f00;
+	font-size: 70%;
+}
+
+#tools {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 30px;
+	right: 20px;
+}
+
+#tools a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#title {
+	background: #B8C569;
+	padding: 20px 30px 30px 20px;
+	margin: 20px 0;
+	color: #3C4313;
+	position: relative;
+	-webkit-border-radius: 16px;
+	-webkit-box-shadow: 0 2px 0 #93A045;
+	-moz-border-radius: 16px;
+}
+
+/** A little hacky to create arrows without images **/
+.about {
+	text-indent: -999em;
+	display: block;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #BAC36E;
+	border-top: 0;
+	position: absolute;
+	top: -10px;
+	left: 60px;
+}
+
+#title h1 {
+	font-size: 50px;
+	margin: 0;
+}
+
+#title h1 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#title h2 {
+	font-size: 20px;
+	margin: 0;
+	font-weight: normal;
+}
+
+/** Main content **/
+#main {
+	background: #314660;
+	background: -webkit-gradient(linear, left top, left 30%, from(#314660),
+		to(#364B66) );
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+	padding: 20px;
+}
+
+/** Quiz **/
+.quiz .quiz-title {
+	margin: 0;
+}
+
+.quiz .quiz-title a {
+	font-size: 36px;
+	color: #F5C2CC;
+	text-decoration: none;
+}
+
+.questionnaires li {
+	list-style: none;
+}
+
+.questionnaires a {
+	font-size: 18px;
+	color: #9FA85D;
+	text-decoration: none;
+}
+
+.question .question-label a {
+	font-size: 22px;
+	color: #9FA85D;
+	text-decoration: none;
+}
+
+.question .answers li {
+	list-style: none;
+	font-size: 16px;
+	color: #BBBBBB;
+	text-decoration: none;
+}
+
+/** Results **/
+.results h1 {
+	color: #869AB1;
+	font-size: 28px;
+	margin-bottom: 15px;
+}
+
+.results li {
+	list-style: none;
+}
+
+.results .question-label {
+	color: #9FA85D;
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.results p {
+	color: #BBBBBB;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.retour a {
+	color: #869AB1;
+}
+
+.retour h2 {
+	color: #BBBBBB;
+}
+
+/** Footer **/
+#footer {
+	border-top: 1px solid #45597A;
+	font-size: 70%;
+	padding: 10px 30px;
+	text-align: center;
+	color: #869AB1;
+	margin-top: 30px;
+}
+
+#footer a {
+	color: #869AB1;
+	font-weight: bold;
+}
+
+/** Login **/
+#login form {
+	background: #8B98AD !important;
+	border: 0 !important;
+	-webkit-border-radius: 16px;
+	-moz-border-radius: 16px;
+}
+
+#login label,#password-field label,#username-field label {
+	color: #161D28 !important;
+	font-size: 110% !important;
+}
+
+#remember-field {
+	display: none;
+}

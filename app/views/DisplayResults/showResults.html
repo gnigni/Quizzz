@@ -1,0 +1,39 @@
+#{extends 'main.html' /}
+#{set title:'Résultats' /}
+
+#{if results}
+	<div class="results">
+		<h1>Votre score: ${score} / ${results.size}</h1>
+		<ul>
+			#{list items:results, as:'result'}
+				<li>
+					<h2 class= "question-label">Question: ${result.orderId}-&nbsp;${result.question.label}</h2>
+					
+					#{if result.answer!= null}
+						<p>Votre réponse: ${result.answer.label}</p>
+					#{/if}
+					#{else}
+						<p>Pas de réponse</p>
+					#{/else}
+					
+					#{if result.answer!= null && result.answer.id == result.question.getGoodAnswer().id}
+						<p>Bonne réponse!</p>
+					#{/if}
+					#{else}
+						<p>La bonne réponse était: ${result.question.getGoodAnswer().label}</p>
+					#{/else}
+				</li>
+			#{/list}
+		</ul>
+	</div>
+#{/if}
+
+#{else}
+	<div class="retour">
+		<h2>Il n'y a pas de résultat à afficher</h2>
+	</div>
+#{/else}
+
+<div class="retour">
+	<a href=@{Welcome.index}>Retour aux questionnaires</a>
+</div>

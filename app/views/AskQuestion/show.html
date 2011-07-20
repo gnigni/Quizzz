@@ -1,0 +1,32 @@
+#{extends 'main.html' /} #{set title:'Question' /} #{if result}
+
+<div class="question">
+
+	<h2 class="question-label">
+		<a>${result.orderId}-&nbsp;${question.label}</a>
+	</h2>
+
+	<div class="answers">
+		#{form @AskQuestion.saveAnswer()} 
+		<input type="hidden" value="${result.id}" name="resultId" />
+		<ul>
+			#{list items:answers, as:'answer'}
+			<li><input type="radio" id="${answer.id}" name="answerId"
+				value="${answer.id}"><label for="${answer.id}">&nbsp;&nbsp;${answer.label}</label></input>
+			</li> #{/list}
+		</ul>
+		<p>
+			<input type="submit" value="Valider" />
+		</p>
+		#{/form}
+	</div>
+
+</div>
+
+#{/if} 
+#{else}
+<div class="retour">
+	<h2>Il n'y a pas de question à afficher</h2>
+	<a href=@{Welcome.index}>Retour aux questionnaires</a>
+</div>
+#{/else}

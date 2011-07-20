@@ -1,0 +1,18 @@
+# You can specialize this file for each language.
+# For example, for French create a messages.fr file
+#
+label=Libellé
+questionnaire=Questionnaire
+title=Titre
+isCorrect=Est-ce la bonne réponse?
+question=Question
+Questionnaires=Questionnaires
+Questions=Questions
+Answers=Réponses
+Users=Utilisateurs
+email=E-mail
+password=Mot de passe
+fullname=Surnom
+secure.username=E-mail:
+secure.password=Mot de passe:
+secure.signin=Log in

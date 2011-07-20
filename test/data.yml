@@ -1,0 +1,470 @@
+# Test data
+
+User(bob):
+    email:          pierre@gmail.com
+    password:       admin
+
+Questionnaire(botaniqueQuestionnaire):
+    title:          Questionnaire sur la botanique
+    
+Questionnaire(vacheQuestionnaire):
+    title:          Questionnaire sur les vaches
+    
+Questionnaire(normandeQuestionnaire):
+    title:          Questionnaire sur la Normande
+    
+Question(charmeQuestion):
+    label:          Quelle est la forme des feuilles d'un charme?
+    questionnaire:  botaniqueQuestionnaire
+    
+Question(hetreQuestion):
+    label:          Quelle est la forme des feuilles d'un hêtre?
+    questionnaire:  botaniqueQuestionnaire
+    
+Question(ormeQuestion):
+    label:          Quelle est la forme des feuilles d'un orme?
+    questionnaire:  botaniqueQuestionnaire
+    
+Question(cheneQuestion):
+    label:          Quelle est la forme des feuilles d'un chêne?
+    questionnaire:  botaniqueQuestionnaire
+
+Question(erableQuestion):
+    label:          Quelle est la forme des feuilles d'un érable?
+    questionnaire:  botaniqueQuestionnaire
+    
+Question(marronierQuestion):
+    label:          Quelle est la forme des feuilles d'un marronnier?
+    questionnaire:  botaniqueQuestionnaire
+
+Question(aulneQuestion):
+    label:          Quelle est la forme des feuilles d'un aulne?
+    questionnaire:  botaniqueQuestionnaire
+    
+Question(chataignierQuestion):
+    label:          Quelle est la forme des feuilles d'un chataîgnier?
+    questionnaire:  botaniqueQuestionnaire
+
+Question(cerisierQuestion):
+    label:          Quelle est la forme des feuilles d'un cerisier?
+    questionnaire:  botaniqueQuestionnaire
+    
+Question(sauleQuestion):
+    label:          Quelle est la forme des feuilles d'un saule?
+    questionnaire:  botaniqueQuestionnaire
+
+Question(manguierQuestion):
+    label:          Quelle est la forme des feuilles d'un manguier?
+    questionnaire:  botaniqueQuestionnaire
+
+Question(ginkoQuestion):
+    label:          Quelle est la forme des feuilles d'un ginko?
+    questionnaire:  botaniqueQuestionnaire
+
+Question(peuplierQuestion):
+    label:          Quelle est la forme des feuilles d'un peuplier?
+    questionnaire:  botaniqueQuestionnaire
+
+Question(noyerQuestion):
+    label:          Quelle est la forme des feuilles d'un noyer?
+    questionnaire:  botaniqueQuestionnaire
+    
+Question(primholsteinQuestion):
+    label:          Quelle est la couleur de la PrimHolstein?
+    questionnaire:  vacheQuestionnaire
+    
+Question(bazadaiseQuestion):
+    label:          Quelle est la couleur de la Bazadaise?
+    questionnaire:  vacheQuestionnaire
+    
+Question(charolaiseQuestion):
+    label:          Quelle est la couleur de la Charolaise?
+    questionnaire:  vacheQuestionnaire
+    
+Question(limousineQuestion):
+    label:          Quelle est la couleur de la Limousine?
+    questionnaire:  vacheQuestionnaire
+    
+Question(normandeQuestion):
+    label:          Quelle est la couleur de la Normande?
+    questionnaire:  normandeQuestionnaire
+
+Answer(charmeElliptique):
+    label:          Elliptique
+    question:       charmeQuestion
+    isCorrect:      true
+                    
+Answer(charmeLanceolee):
+    label:          Lancéolée
+    question:       charmeQuestion
+    isCorrect:      false
+    
+Answer(charmeLobee):
+    label:          Lobée
+    question:       charmeQuestion
+    isCorrect:      false
+    
+Answer(charmeComposee):
+    label:          Composée
+    question:       charmeQuestion
+    isCorrect:      false
+    
+Answer(hetreElliptique):
+    label:          Elliptique
+    question:       hetreQuestion
+    isCorrect:      true
+                    
+Answer(hetreLanceolee):
+    label:          Lancéolée
+    question:       hetreQuestion
+    isCorrect:      false
+    
+Answer(hetreLobee):
+    label:          Lobée
+    question:       hetreQuestion
+    isCorrect:      false
+    
+Answer(hetreComposee):
+    label:          Composée
+    question:       hetreQuestion
+    isCorrect:      false
+    
+Answer(ormeElliptique):
+    label:          Elliptique
+    question:       ormeQuestion
+    isCorrect:      true
+                    
+Answer(ormeLanceolee):
+    label:          Lancéolée
+    question:       ormeQuestion
+    isCorrect:      false
+    
+Answer(ormeLobee):
+    label:          Lobée
+    question:       ormeQuestion
+    isCorrect:      false
+    
+Answer(ormeComposee):
+    label:          Composée
+    question:       ormeQuestion
+    isCorrect:      false
+    
+Answer(cheneElliptique):
+    label:          Elliptique
+    question:       cheneQuestion
+    isCorrect:      false
+                    
+Answer(cheneLanceolee):
+    label:          Lancéolée
+    question:       cheneQuestion
+    isCorrect:      false
+    
+Answer(cheneLobee):
+    label:          Lobée
+    question:       cheneQuestion
+    isCorrect:      true
+    
+Answer(cheneComposee):
+    label:          Composée
+    question:       cheneQuestion
+    isCorrect:      false
+    
+Answer(erableElliptique):
+    label:          Elliptique
+    question:       erableQuestion
+    isCorrect:      false
+                    
+Answer(erableLanceolee):
+    label:          Lancéolée
+    question:       erableQuestion
+    isCorrect:      false
+    
+Answer(erableLobee):
+    label:          Lobée
+    question:       erableQuestion
+    isCorrect:      true
+    
+Answer(erableComposee):
+    label:          Composée
+    question:       erableQuestion
+    isCorrect:      false
+
+Answer(marronierElliptique):
+    label:          Elliptique
+    question:       marronierQuestion
+    isCorrect:      false
+                    
+Answer(marronierLanceolee):
+    label:          Lancéolée
+    question:       marronierQuestion
+    isCorrect:      false
+    
+Answer(marronierLobee):
+    label:          Lobée
+    question:       marronierQuestion
+    isCorrect:      false
+    
+Answer(marronierComposee):
+    label:          Composée
+    question:       marronierQuestion
+    isCorrect:      true
+    
+Answer(aulneElliptique):
+    label:          Elliptique
+    question:       aulneQuestion
+    isCorrect:      true
+                    
+Answer(aulneLanceolee):
+    label:          Lancéolée
+    question:       aulneQuestion
+    isCorrect:      false
+    
+Answer(aulneLobee):
+    label:          Lobée
+    question:       aulneQuestion
+    isCorrect:      false
+    
+Answer(aulneComposee):
+    label:          Composée
+    question:       aulneQuestion
+    isCorrect:      false
+    
+Answer(chataignierElliptique):
+    label:          Elliptique
+    question:       chataignierQuestion
+    isCorrect:      false
+                    
+Answer(chataignierLanceolee):
+    label:          Lancéolée
+    question:       chataignierQuestion
+    isCorrect:      true
+    
+Answer(chataignierLobee):
+    label:          Lobée
+    question:       chataignierQuestion
+    isCorrect:      false
+    
+Answer(chataignierComposee):
+    label:          Composée
+    question:       chataignierQuestion
+    isCorrect:      false
+    
+Answer(cerisierElliptique):
+    label:          Elliptique
+    question:       cerisierQuestion
+    isCorrect:      true
+                    
+Answer(cerisierLanceolee):
+    label:          Lancéolée
+    question:       cerisierQuestion
+    isCorrect:      false
+    
+Answer(cerisierLobee):
+    label:          Lobée
+    question:       cerisierQuestion
+    isCorrect:      false
+    
+Answer(cerisierComposee):
+    label:          Composée
+    question:       cerisierQuestion
+    isCorrect:      false
+    
+Answer(sauleElliptique):
+    label:          Elliptique
+    question:       sauleQuestion
+    isCorrect:      false
+                    
+Answer(sauleLanceolee):
+    label:          Lancéolée
+    question:       sauleQuestion
+    isCorrect:      true
+    
+Answer(sauleLobee):
+    label:          Lobée
+    question:       sauleQuestion
+    isCorrect:      false
+    
+Answer(sauleComposee):
+    label:          Composée
+    question:       sauleQuestion
+    isCorrect:      false
+
+Answer(manguierElliptique):
+    label:          Elliptique
+    question:       manguierQuestion
+    isCorrect:      false
+                    
+Answer(manguierLanceolee):
+    label:          Lancéolée
+    question:       manguierQuestion
+    isCorrect:      true
+    
+Answer(manguierLobee):
+    label:          Lobée
+    question:       manguierQuestion
+    isCorrect:      false
+    
+Answer(manguierComposee):
+    label:          Composée
+    question:       manguierQuestion
+    isCorrect:      false
+
+Answer(ginkoElliptique):
+    label:          Elliptique
+    question:       ginkoQuestion
+    isCorrect:      false
+                    
+Answer(ginkoLanceolee):
+    label:          Lancéolée
+    question:       ginkoQuestion
+    isCorrect:      true
+    
+Answer(ginkoLobee):
+    label:          Lobée
+    question:       ginkoQuestion
+    isCorrect:      false
+    
+Answer(ginkoComposee):
+    label:          Composée
+    question:       ginkoQuestion
+    isCorrect:      false
+
+Answer(peuplierElliptique):
+    label:          Elliptique
+    question:       peuplierQuestion
+    isCorrect:      false
+                    
+Answer(peuplierLanceolee):
+    label:          Lancéolée
+    question:       peuplierQuestion
+    isCorrect:      true
+    
+Answer(peuplierLobee):
+    label:          Lobée
+    question:       peuplierQuestion
+    isCorrect:      false
+    
+Answer(peuplierComposee):
+    label:          Composée
+    question:       peuplierQuestion
+    isCorrect:      false
+
+Answer(noyerElliptique):
+    label:          Elliptique
+    question:       noyerQuestion
+    isCorrect:      false
+                    
+Answer(noyerLanceolee):
+    label:          Lancéolée
+    question:       noyerQuestion
+    isCorrect:      false
+    
+Answer(noyerLobee):
+    label:          Lobée
+    question:       noyerQuestion
+    isCorrect:      false
+    
+Answer(noyerComposee):
+    label:          Composée
+    question:       noyerQuestion
+    isCorrect:      true
+
+Answer(primholsteinVert):
+    label:          Vert fluo
+    question:       primholsteinQuestion
+    isCorrect:      false
+    
+Answer(primholsteinBlanc):
+    label:          Blanc
+    question:       primholsteinQuestion
+    isCorrect:      false
+    
+Answer(primholsteinNoir):
+    label:          Noir
+    question:       primholsteinQuestion
+    isCorrect:      false
+    
+Answer(primholsteinRouge):
+    label:          Rouge
+    question:       primholsteinQuestion
+    isCorrect:      false
+    
+Answer(bazadaiseVert):
+    label:          Vert fluo
+    question:       bazadaiseQuestion
+    isCorrect:      false
+    
+Answer(bazadaiseBlanc):
+    label:          Blanc
+    question:       bazadaiseQuestion
+    isCorrect:      true
+    
+Answer(bazadaiseNoir):
+    label:          Noir
+    question:       bazadaiseQuestion
+    isCorrect:      false
+    
+Answer(charolaiseVert):
+    label:          Vert fluo
+    question:       charolaiseQuestion
+    isCorrect:      false
+    
+Answer(charolaiseBlanc):
+    label:          Blanc
+    question:       charolaiseQuestion
+    isCorrect:      true
+    
+Answer(charolaiseNoir):
+    label:          Noir
+    question:       charolaiseQuestion
+    isCorrect:      true
+    
+Answer(charolaiseGris):
+    label:          Gris
+    question:       charolaiseQuestion
+    isCorrect:      false
+    
+Answer(vert):
+    label:          Vert fluo
+    question:       limousineQuestion
+    isCorrect:      false
+    
+Answer(limousineBlanc):
+    label:          Blanc
+    question:       limousineQuestion
+    isCorrect:      true
+    
+Answer(limousineNoir):
+    label:          Noir
+    question:       limousineQuestion
+    isCorrect:      true
+    
+Answer(limousineGris):
+    label:          Gris
+    question:       limousineQuestion
+    isCorrect:      false
+    
+Answer(limousineBleu):
+    label:          Bleu fluo
+    question:       limousineQuestion
+    isCorrect:      false
+    
+Answer(normandeVert):
+    label:          Vert fluo
+    question:       normandeQuestion
+    isCorrect:      false
+    
+Answer(normandeMarronBlanc):
+    label:          Marron-Blanche
+    question:       normandeQuestion
+    isCorrect:      true
+    
+Answer(normandeNoir):
+    label:          Noir
+    question:       normandeQuestion
+    isCorrect:      false
+    
+Answer(normandeGris):
+    label:          Gris
+    question:       normandeQuestion
+    isCorrect:      false

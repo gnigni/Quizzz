@@ -1,0 +1,6 @@
+# Application dependencies
+
+require:
+    - play -> cobertura 2.1
+    - crud
+    - secure
